@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   get 'article/:id/edit',  to: 'article#edit', as: :edit_article
   patch 'article/:id', to: 'article#update'
+
+  delete 'article/:id', to: 'article#destroy', as: :destroy_article
 end

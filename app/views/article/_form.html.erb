@@ -1,7 +1,7 @@
-<%= simple_form_for(article) do |f| %>
-  <%=f.label :title %>
-  <%=f.text_field :title %>
-  <%=f.label :content %>
-  <%=f.text_field :content %>
-  <%=f.submit%>
-<% end %>
+<div class="container">
+  <%= simple_form_for(article) do |f|%>
+    <%=f.input :title %>
+    <%=f.input :content %>
+    <%=f.submit class:"btn btn-primary"%>
+  <% end %>
+</div>

@@ -9,8 +9,8 @@
 
 10.times do
   article = Article.new(
-    title: Faker::Name.name,
-    content: Faker::ChuckNorris.fact
+    title: Faker::FunnyName.name,
+    content: Faker::GreekPhilosophers.quote
   )
   article.save!
 end

@@ -1,0 +1,8 @@
+<h1>Here is your article</h1>
+
+<p><%= @article.title%></p>
+
+<p><%= @article.content%></p>
+<%= link_to  "Edit that shit ! 🤨", edit_article_path(@article.id) %>
+
+<%= link_to  "Back", articles_path %>

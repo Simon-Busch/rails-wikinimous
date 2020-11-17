@@ -1,5 +1,6 @@
 class ArticleController < ApplicationController
 
+  # before_action :set_article, only: [:create, :edit, :update, :destroy]
   def index 
     @articles = Article.all
   end
@@ -41,5 +42,9 @@ class ArticleController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :content)
+  end
+
+  def set_article
+    @article = Article.find(params[:id])
   end
 end
